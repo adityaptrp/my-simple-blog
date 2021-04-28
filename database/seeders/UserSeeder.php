@@ -24,7 +24,7 @@ class UserSeeder extends Seeder
             'twitter' => 'adityaptrp_',
             'facebook' => 'adityaptrp.me',
             'website' => 'https://www.youtube.com/watch?v=zOUtK--JPhc',
-            'youtube_link' => 'UC62n-2EB6U7cPm4yrjBBsPA',
+            'youtube_link_id' => 'UC62n-2EB6U7cPm4yrjBBsPA',
             'is_admin' => true,
         ]);
     }
