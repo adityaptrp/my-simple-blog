@@ -1,0 +1,326 @@
+
+/* custom upload file */
+.custom-file-upload{
+    position: relative;
+    padding-top: 6px;
+    font-size: 13px;
+    padding-bottom: 6px;
+    padding-right: 10px;
+    padding-left: 103px;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+    box-sizing: border-box;
+}
+.custom-file-upload::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border: 3px solid;
+    box-sizing: border-box;
+    border-color: #d6d6d6;
+    transition: border-color 0.5s; 
+}
+.custom-file-upload::after {
+    content: 'Choose File';
+    position: absolute;
+    left: 1px;
+    top: 0;
+    bottom: 0;
+    font-size: 12px;
+    transform: scale(1.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 12px;
+    height: 100%;
+    color: #000;
+    background-color: #d6d6d6;
+    transition: background-color 0.5s;
+}
+.custom-file-upload:hover::after {
+    background-color: #2d3748;
+    color: #fff;
+}
+.custom-file-upload:hover::before {
+    border-color: #2d3748; 
+}
+.custom-file-upload.ac::after {
+    color: #fff;
+    background-color: #48bb78;
+}
+.custom-file-upload.ac::before {
+    border-color: #48bb78;
+}
+
+
+
+/* cms-modal DELETE */
+.cms-modal-alert {
+    display: none;
+    position: fixed;
+    font-family: 'Times new roman', sans-serif;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all .5s;
+}
+/* content */
+.cms-modal-body-c {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    background-color: #fff;
+    width: 90vw;
+    padding: 15px 20px;
+    border-top: 4px solid #f6e05e;
+    border-radius: 4px;
+    transition: transform .5s ease-in-out;
+    z-index: 3;
+}
+.cms-modal-body-c.on {
+    transform: translate(-50%, -50%);
+}
+.cms-modal-title h1{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.cms-modal-btn {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 3px; 
+    transition: all .2s;
+}
+
+
+/* SETTING GLOBAL LIST CMS */
+/* nambahin border di show 10 atas form */
+select[name="datatable_length"] {
+    border: 1.3px solid rgba(0, 0, 0, .2);
+    border-radius: 2px;
+}
+/* Matiin error alert TINYMCE */
+.tox-notifications-container {
+    display: none !important;
+}
+/* Hilangin BG gray kalo make sorting table */
+/* .sorting_1 {
+    background-color: white !important;
+} */
+
+
+/* LIST POST */
+.cms-mp-title {
+    width: 250px;
+    min-width: 250px;
+    max-width: 400px;
+}
+.h-cms-mp {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#F4F4F4;
+    opacity: 0;
+    visibility: hidden;
+}
+.h-cms-mp a {
+    cursor: pointer;
+    color: #4a5568;
+    transition: color 0.5s;
+}
+.h-cms-mp a:hover {
+    color: #242931;
+}
+
+.body-l-post tr {
+    background-color: white !important;
+}
+.body-l-post > tr td {
+    background-color: white;
+}
+.body-l-post tr:hover > td {
+    background-color:#F4F4F4 !important;
+}
+.body-l-post > tr:hover {
+    background-color:#F4F4F4 !important;
+}
+.body-l-post > tr:hover .h-cms-mp{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* LIST CATEGORY */
+.body-l-common > tr.odd > .sorting_1 {
+    background-color: #f1f1f1 !important;
+}
+.body-l-common > tr.even > .sorting_1 {
+    background-color: #f9f9f9 !important;
+}
+.body-l-common > tr.odd {
+    background-color: #f7f7f7 !important;
+}
+.body-l-common > tr.odd:hover {
+    background-color: #f7f7f7 !important;
+}
+.body-l-common > tr.even {
+    background-color: white !important;
+}
+.body-l-common > tr.even:hover {
+    background-color: white !important;
+}
+
+.body-l-common > tr td a:focus {
+    outline: none;
+    color: #f7fafc;
+}
+.body-l-common > tr td a, button {
+    color: #f7fafc;
+    transition: background-color .3s;
+}
+
+/* form custom */
+.form-category-cms input {
+    border-width: 1.4px !important;
+    border-radius: 4px;
+}
+
+/* BTN REMOVE SELECTED TAGS */
+.btn-rm-selected:hover {
+    background-color: rgb(238, 76, 76);
+}
+/* Panel delete multiple */
+#selectedPanel {
+    position: sticky;
+    top: 80px;
+    max-height: 0;
+    margin: 0 -25px;
+    overflow: hidden;
+    z-index: 25;
+    transition: 0.5s max-height;
+}
+
+
+/* Accordion settings */
+.all-accordions {
+    width: auto;
+}
+.accordions-btn {
+    position: relative;
+}
+.accordions-btn.active {
+    background-color: #fcfcfc;
+}
+.accordions-btn:hover {
+    background-color: #fcfcfc;
+}
+.accordions-btn:hover .ac-menu-icon  {
+    color: #48bb78;
+}
+.accordions-btn .t-accordions div:nth-child(2) {
+    color: #919191;
+}
+.accordions-btn .ac-menu-icon {
+    width: 23px;
+    height: 23px;
+    font-size: 20px;
+    color: #b6b6b6;
+    min-width: 45px;
+    max-width: 45px;
+}
+.accordions-btn .ac-menu-icon.active {
+    color: #48bb78;
+}
+.accordions-btn .icon-open {
+    min-width: 45px;
+    max-width: 45px;
+    transition: transform .5s;
+}
+.accordions-btn .icon-open.active {
+    transform: rotate(90deg);
+}
+
+/* accordion content */
+.accordions-content {
+    height: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, border-width .5s ;
+}
+.accordions-content.active {
+    max-height: 270px;
+}
+
+/* form */
+.input-group {
+    display: flex !important;
+    flex-direction: column !important;
+}
+.input-group input {
+    color: #646464;
+    border-radius: 4px;
+    padding: 5px 12px;
+    height: 32px;
+    border: 1.5px solid rgb(230, 230, 230);
+    width: 100%;
+}
+
+
+.cms-ud-menu .pull-left {
+    position: relative;
+}
+.cms-ud-menu .pull-right {
+    position: absolute;
+    top: 20px;
+    right: 32px;
+}
+
+
+
+/* Small */
+@media (min-width: 576px) {
+    .cms-modal-body-c {
+        width: 60vw;
+    }
+}
+
+
+/* Medium */
+@media (min-width: 768px) {
+    .cms-modal-body-c {
+        width: 40vw;
+    }
+
+    /* accordions */
+    .all-accordions {
+        width: 620px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .cms-modal-body-c {
+        width: 30vw;
+    }
+}
+
+/* lg */
+@media (min-width: 1200px) {
+    .cms-modal-body-c {
+        width: 28vw;
+    }
+}

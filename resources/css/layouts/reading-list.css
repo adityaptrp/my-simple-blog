@@ -1,0 +1,49 @@
+
+.all-content-rl hr {
+    border-color: var(--hr-default);
+}
+
+.text-readlist {
+    color: var(--text-default-readlist);
+}
+.submenu-readlist a{
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-secondary);
+    border-color: var(--text-title);
+}
+.submenu-readlist-active {
+    color: var(--text-title) !important;
+}
+.title-rl, .title-p-rl {
+    color: var(--text-title);
+}
+.readlist-tgl-p, .remove-archive-readlist-btn {
+    color: var(--text-title);
+}
+
+/* title */
+.title-rl, .title-p-rl, .profile-rl, .btn-rl {
+    font-family: 'Roboto', sans-serif;
+}
+
+.profile-rl > .point {
+    position: relative;
+}
+.profile-rl > .point::before {
+    content: '\2022';
+    position: absolute;
+    left: -15px;
+    bottom: 0;
+    color: var(--text-default);
+}
+
+.empty-rl {
+    color: var(--text-black-dark-redup);
+}
+
+/* empty reading list */
+@media (min-width: 576px) {
+    .empty-rl {
+        background-color: var(--empty-readlist-bg);
+    }
+}

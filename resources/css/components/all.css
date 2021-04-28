@@ -1,0 +1,42 @@
+
+.box-shadow-sm {
+    box-shadow: 0 3px 10px rgba(102, 102, 102, 0.1);
+}
+
+.box-shadow-md {
+    box-shadow: 0 2px 20px rgba(0,0,0,.1);
+}
+
+.box-shadow-lg {
+    box-shadow: 0 2px 30px rgba(0,0,0,.1);
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.col-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flash-message {
+    position: fixed;
+    display: flex;
+    bottom: 30px;
+    left: 40px;
+    z-index: 30;
+}
+.flash-message {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-flash-message);
+    background-color: var(--nav-bg);
+    color: var(--text-title);
+    box-shadow: 0 3px 10px rgba(102, 102, 102, 0.1);
+    padding: 8px 17px;
+    border-radius: 4px !important;
+    /* font-weight: 600; */
+    font-size: 0.93rem/* 14.88px */;
+}

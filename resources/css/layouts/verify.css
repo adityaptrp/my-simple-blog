@@ -1,0 +1,103 @@
+
+body {
+    background-color: var(--nav-bg);
+}
+
+.verify-svg-white {
+    fill: var(--verify-svg1);
+}
+.verify-svg-white2 {
+    fill: var(--verify-svg2);
+}
+.verify-svg-green {
+    fill: var(--verify-btn-resend);
+}
+.message-verify h1 {
+    font-family: 'Roboto', sans-serif;
+    color: var(--verify-title);
+}
+.message-verify h2 {
+    color: var(--verify-subtitle);
+}
+.message-verify span {
+    color: #48bb78;
+}
+.message-verify p {
+    color: var(--text-secondary);
+}
+.message-verify p > span {
+    color: var(--verify-subtitle);
+}
+
+.verify-back-btn {
+    position: absolute;
+    top: 15px;
+    left: 24px;
+    color: var(--verify-title);
+}
+.verify-back-btn path, .verify-back-btn svg, .verify-back-btn g {
+    pointer-events: none;
+}
+
+/* Btn */
+.btn-verify {
+    font-family: 'Roboto', sans-serif;
+}
+.verify-resend-email {
+    background-color: var(--verify-btn-resend);
+    font-weight: 500;
+    color: rgb(245, 245, 245);
+    font-weight: 500;
+    padding: 7px 20px;
+    border-radius: 4px;
+    transition: background-color .5s;
+}
+.verify-resend-email:hover {
+    background-color: var(--verify-btn-resend-hover);
+}
+.verify-contact-supp  {
+    display: inline-block;
+    border: 1.2px solid var(--border-btn-side);
+    color: var(--text-btn-side);
+    padding: 7px 20px;
+    font-weight: 500;
+    border-radius: 3px;
+    transition: color .2s;
+}
+.verify-contact-supp :hover {
+    color: var(--hover-btn-side);
+}
+
+
+/* XSmall */
+@media (min-width: 360px) {
+    .verify-back-btn {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+}
+/* Small */
+@media (min-width: 576px) {
+    
+}
+
+
+/* Medium */
+@media (min-width: 768px) {
+    .verify-back-btn {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+}
+
+/* medium */
+@media (min-width: 992px) {
+
+}
+
+/* lg */
+@media (min-width: 1024px) {
+
+}

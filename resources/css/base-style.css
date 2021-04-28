@@ -1,0 +1,35 @@
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+* {
+    outline: none;
+}
+
+/* components */
+@import 'components/dark-mode.css';
+@import 'components/all.css';
+@import 'components/button.css';
+@import 'components/custom-scrollbar.css';
+@import 'components/container.css';
+@import 'components/scroll-top.css';
+@import 'components/modal-alert.css';
+@import 'components/list-unapproved.css';
+@import 'components/notif-n-post.css';
+@import 'components/pagination.css';
+@import 'components/loader-listpost.css';
+@import 'components/set-password.css';
+@import 'components/svg.css';
+
+/* layouts */
+@import 'layouts/home.css';
+@import 'layouts/navigation.css';
+@import 'layouts/footer.css';
+@import 'layouts/show_post.css';
+@import 'layouts/comment.css';
+@import 'layouts/search.css';
+@import 'layouts/auth.css';
+@import 'layouts/cms.css';
+@import 'layouts/reading-list.css';
+@import 'layouts/profile.css';
+@import 'layouts/verify.css';

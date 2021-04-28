@@ -1,0 +1,60 @@
+
+
+.btn {
+    @apply px-4 py-2;
+    border-radius: 4px;
+    transition: 0.5s background-color, 0.5s color;
+}
+.btn:focus {
+    @apply outline-none;
+}
+
+/* blue */
+.btn-blue {
+    @apply bg-blue-500 text-sm text-blue-100;
+}
+.btn-blue:hover {
+    @apply bg-blue-600 text-white;
+}
+/* yellow */
+.btn-yellow {
+    @apply bg-yellow-500 text-sm text-yellow-100;
+}
+.btn-yellow:hover {
+    @apply bg-yellow-600 text-white;
+}
+/* indigo */
+.btn-indigo {
+    @apply bg-indigo-500 text-sm text-indigo-100;
+}
+.btn-indigo:hover {
+    @apply bg-indigo-600 text-white;
+}
+/* red */
+.btn-red {
+    @apply bg-red-500 text-sm text-red-100;
+}
+.btn-red:hover {
+    @apply bg-red-600 text-white;
+}
+/* orange */
+.btn-orange {
+    @apply bg-orange-500 text-sm text-orange-100;
+}
+.btn-orange:hover {
+    @apply bg-orange-600 text-white;
+}
+/* green */
+.btn-green {
+    @apply bg-green-500 text-sm text-green-100;
+}
+.btn-green:hover {
+    @apply bg-green-600 text-white;
+}
+/* teal */
+.btn-teal {
+    @apply bg-teal-500 text-sm text-teal-100;
+}
+.btn-teal:hover {
+    @apply bg-teal-600 text-white;
+}

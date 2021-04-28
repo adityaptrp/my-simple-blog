@@ -1,0 +1,28 @@
+
+/* Write your custom CSS here */
+input[type=checkbox]:focus
+{
+    outline: none;
+}
+
+input[type=checkbox]
+{
+    background-color: #DDD;
+    border-radius: 2px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 17px;
+    height: 17px;
+    top: 0;
+    cursor: pointer;
+    position: relative;
+    outline-style: none;
+    outline: none;
+}
+
+input[type=checkbox]:checked
+{
+    background-color: #409fd6;
+    background: #409fd6 url("data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==") 3px 3px no-repeat;
+}

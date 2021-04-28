@@ -1,0 +1,267 @@
+
+:root {
+    /* Navigation */
+    --nav-bg: #fff;
+    --nav-garis-pembatas: #cbd5e0;
+    --nav-default-text: #000;
+    --nav-border-bot: #e2e8f0;
+    --nav-border-btn: rgb(236, 236, 236);
+    --nav-dropdown-hover: #ebf8ff;
+    --nav-border-dropdown: rgb(232, 237, 241);
+    --nav-off-box-shadow: 0 2px 7px -3px rgba(216, 216, 216, 0.6);
+    --nav-sm-color: #4a5568;
+    --nav-sm-hover-menu: #ebf8ff;
+
+    /* Home */
+    --content-default-bg: #fff;
+    --search-bg: #f0f0f0;
+    --text-default: #1f1f1f;
+    --text-title: #1f1f1f;
+    --text-secondary: #8d8d8d;
+    --hr-default: rgb(224, 224, 224);
+    --hover-btn-side: rgb(0, 0, 0);
+    --text-btn-side: #666666;
+    --border-btn-side: rgba(209, 209, 209, 0.692);
+    --title-line-before-after-list: rgba(202, 202, 202, 0.45);
+    --btn-social-media-etc: #4a5568;
+    --text-kecil-secondary: #8d8d8d;
+    --text-icon: #494949;
+    --by-username-listp: #4a5568;
+
+    /* Post Lagi dikit */
+    --effect-liked-post-bg: rgb(26, 26, 26);
+    --effect-liked-post-text: #fff;
+    --bg-quote: #f7f7f7;
+
+    /* ScrollTop Button */
+    --scrolltop-border: rgba(182, 182, 182, 0.692);
+    --scrolltop-bg: #fff;
+
+    /* Pagination */
+    --text-pagination: #4a5568;
+    --text-pagination-btn: #4a5568;
+    --border-pagination: #e2e8f0;
+    --offmode-prevnext-sm-pagination: #a0aec0;
+    --onmode-prevnext-sm-pagination: #4a5568;
+    --onmode-prevnext-sm-pagination-hover: #000;
+    --offmode-prevnext-lg-pagination: #a0aec0;
+    --onmode-prevnext-lg-pagination: #a0aec0;
+    --onmode-prevnext-lg-pagination-hover: #2d3748;
+    --currentpage-pagination: #2d3748;
+
+    /* readlist */
+    --text-default-readlist: #4a5568;
+    --empty-readlist-bg: #f0f0f0;
+    --text-black-dark-redup: #000;
+
+    /* Search Page */
+    --border-btn-search-input: #d1d1d1;
+    --input-search-focus: #969696;
+    --icon-search-focus: #4a5568;
+    --nav-submenu-search: #000;
+
+    /* Comment */
+    --bg-comment-form: #fff;
+    --bg-ajax-new-comment: #f5fbff;
+    --text-say-comment-panel: #4a5568;
+    --time-n-date-comment-panel: #718096;
+    --btn-delete-comment-hover-bg: #ebf8ff;
+    --selected-text-comment-bg: #e6f0e8;
+    --new-selected-text-bg: #e6f0e8;
+    --ajax-selected-text-bg: #def0e2;
+    --selected-text-post-bg: #e0e7f1;
+    --list-comment-border-left: #f0f0f0;
+    --empty-list-svg: #f8f8f8;
+    --comment-error-bg: #63b3ed;
+    --comment-error-text: #fff;
+    --comment-status: #fff;
+    --comment-status-bg-author: #48bb78;
+    --comment-status-bg-you: rgb(189, 189, 189);
+
+    /* list CU */
+    --list-cu-bg-hover: #f7fafc;
+    --list-cu-bg-title: #48bb78;
+
+    /* Flash message */
+    --border-flash-message: #b4b8bd;
+
+    /* ScrollBar */
+    --bg-scrollbar-track: #fff;
+    --bg-scrollbar-thumb: #a0aec0;
+    --bg-scrollbar-thumb-hover: #4a5568;
+
+    /* LOADER N Load More */
+    --bg-loader: #333;
+    /* Preview Loadmore Post Faded */
+    --prev-load-more: 255, 255, 255;
+    --hover-btn-loadmore: #313131;
+
+    /* Panle notif New Post */
+    --notif-np-header: #f7fafc;
+    --notif-np-bullet: #cbd5e0;
+    --notif-np-t-alert: #fff;
+    --notif-np-bg: #fff;
+    --notif-np-btn-bg: #bee3f8;
+    --notif-np-btn-txt: #667eea;
+
+    /* Edit Profile */
+    --header-n-footer-ep: #fff;
+    --text-input-ep: #1f1f1f;
+    --bg-input-ep: #fff;
+
+    /* checkbox */
+    --checkbox-border: rgb(209, 209, 209);
+
+    /* SVG set password LG */
+    --spu-svg0: #F2F2F2;
+    --spu-svg1: #E6E6E6;
+    --spu-svg2: #FFFFFF;
+    --spu-svg3: #CCCCCC;
+    --spu-svg4: #6C63FF;
+    --spu-svg5: #FFB8B8;
+    --spu-svg6: #2F2E41;
+}
+
+[data-theme="dark"] {
+    /* Navigation */
+    --nav-bg: #22262b;
+    --nav-garis-pembatas: #E4E6EB;
+    --nav-default-text: #cfcfcf;
+    --nav-border-bot: #3E4042;
+    --nav-border-btn: #3E4042;
+    --nav-dropdown-hover: #37393b;
+    --nav-border-dropdown: #333536;
+    --nav-off-box-shadow: 0;
+    --nav-sm-color: #a0aec0;
+    --nav-sm-hover-menu: #33373b;
+
+    /* Home */
+    --content-default-bg: #13161b;
+    --search-bg: #22262b;
+    --text-default: #979797;
+    --text-title: #d4d4d4;
+    --text-secondary: #838383;
+    --hr-default: #474747;
+    --hover-btn-side: rgb(211, 211, 211);
+    --text-btn-side: #a5a5a5;
+    --border-btn-side: rgba(87, 87, 87, 0.692);
+    --title-line-before-after-list: rgba(136, 136, 136, 0.45);
+    --btn-social-media-etc: #929eb8;
+    --text-kecil-secondary: #b8b8b8;
+    --text-icon: #979797;
+    --by-username-listp: #a0aec0;
+
+    /* Post Lagi dikit */
+    --effect-liked-post-bg: #e2e8f0;
+    --effect-liked-post-text: #000;
+    --bg-quote: #22262b;
+
+    /* ScrollTop */
+    --scrolltop-border: rgba(87, 87, 87, 0.692);
+    --scrolltop-bg: #1b1e22;
+
+    /* Pagination */
+    --text-pagination: #a5a5a5;
+    --text-pagination-btn: #718096;
+    --border-pagination: rgba(87, 87, 87, 0.692);
+    --offmode-prevnext-sm-pagination: #4a5568;
+    --onmode-prevnext-sm-pagination: #a0aec0;
+    --onmode-prevnext-sm-pagination-hover: #e2e8f0;
+    --offmode-prevnext-lg-pagination: #4a5568;
+    --onmode-prevnext-lg-pagination: #4a5568;
+    --onmode-prevnext-lg-pagination-hover: #e2e8f0;
+    --currentpage-pagination: #a0aec0;
+
+    /* readlist */
+    --text-default-readlist: #979797;
+    --empty-readlist-bg: #22262b;
+    --text-black-dark-redup: #a5a5a5;
+
+    /* Search Page */
+    --border-btn-search-input: #808080;
+    --input-search-focus: #b1b1b1;
+    --icon-search-focus: #d4d4d4;
+    --nav-submenu-search: #a5a5a5;
+
+    /* Comment */
+    --bg-comment-form: #33373b;
+    --bg-ajax-new-comment: #2b2e31;
+    --text-say-comment-panel: #979797;
+    --time-n-date-comment-panel: #7f8ea5;
+    --btn-delete-comment-hover-bg: #3b4042;
+    --selected-text-comment-bg: #393e42;
+    --new-selected-text-bg: #525558;
+    --ajax-selected-text-bg: #4c5257;
+    --selected-text-post-bg: #465764;
+    --list-comment-border-left: #33373b;
+    --empty-list-svg: #cecece;
+    --comment-error-bg: #4299e1;
+    --comment-error-text: #edf2f7;
+    --comment-status: rgb(216, 216, 216);
+    --comment-status-bg-author: #38a169;
+    --comment-status-bg-you: rgb(92, 92, 92);
+
+    /* list CU */
+    --list-cu-bg-hover: #33373b;
+    --list-cu-bg-title: #38404d;
+
+    /* Flash message */
+    --border-flash-message: #3E4042;
+
+    /* ScrollBar */
+    --bg-scrollbar-track: rgb(172, 172, 172);
+    --bg-scrollbar-thumb: #5b636d;
+    --bg-scrollbar-thumb-hover: #37404e;
+
+    /* LOADER N Load More */
+    --bg-loader: #718096;
+    /* Preview Loadmore Post Faded */
+    --prev-load-more: 19, 22, 27;
+    --hover-btn-loadmore: rgb(211, 211, 211);
+
+    /* Panle notif New Post */
+    --notif-np-header: #22262b;
+    --notif-np-bullet: #3b4042;
+    --notif-np-t-alert: #3b4042;
+    --notif-np-bg: #22262b;
+    --notif-np-btn-bg: #4299e1;
+    --notif-np-btn-txt: #2a4365;
+
+    /* Edit Profile */
+    --header-n-footer-ep: #222325;
+    --text-input-ep: #acacac;
+    --bg-input-ep: #2d3033;
+
+    /* checkbox */
+    --checkbox-border: #3E4042;
+
+    /* SVG set password LG */
+    --spu-svg0: #414852;
+    --spu-svg1: #303438;
+    --spu-svg2: #8f8f8f;
+    --spu-svg3: #303438;
+    --spu-svg4: #4e48bb;
+    --spu-svg5: #db9369;
+    --spu-svg6: #2F2E41;
+}
+
+
+:root {
+    /* Verify */
+    --verify-title: #414753;
+    --verify-subtitle: #414753;
+    --verify-btn-resend: rgb(72, 187, 120);
+    --verify-btn-resend-hover: rgba(72, 187, 120, .9);
+    --verify-svg1: #f2f2f2;
+    --verify-svg2: #f2f2f2;
+}
+
+[data-theme="dark"] {
+    /* Verify */
+    --verify-title: #d4d4d4;
+    --verify-subtitle: #a8a8a8;
+    --verify-btn-resend: #38a169;
+    --verify-btn-resend-hover: rgba(56, 161, 105, .9);
+    --verify-svg1: #cecece;
+    --verify-svg2: #2e3236;
+}

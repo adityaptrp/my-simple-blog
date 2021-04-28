@@ -1,0 +1,58 @@
+/* Loader */
+.ajax-load {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 45px;
+}
+
+.ajax-load > .spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ajax-load > .spinner > div {
+    width: 14px;
+    height: 14px;
+    margin-left: 4px;
+    background-color: var(--bg-loader);
+
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.ajax-load > .spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.ajax-load > .spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0) }
+    40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    }
+}
+
+@media (min-width: 576px) {
+    .ajax-load > .spinner > div {
+        width: 16px;
+        height: 16px;
+        margin-left: 5px;
+    }
+}
