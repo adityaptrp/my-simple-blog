@@ -130,8 +130,8 @@
                 </div>
             </div>
         @else
-            <div class="nav-bot-rg flex items-center py-3">
-                <a class="nav-row font-bold pr-4 border-r items-center" href="{{ route('login') }}">
+            <div class="nav-bot-rg flex items-center py-3 text-cs-primary">
+                <a class="nav-row font-bold pr-4 border-r items-center text-cs-primary" href="{{ route('login') }}">
                     Log In
                 </a>
                 {{-- Dark Mode Button --}}
@@ -139,7 +139,7 @@
                     <i class="fas fa-moon"></i>
                 </button>
                 {{-- Bookmark --}}
-                <a href="{{ route('readingList.saved') }}" class="mx-4 cursor-pointer hover:text-blue-500">
+                <a href="{{ route('readingList.saved') }}" class="mx-4 cursor-pointer hover:text-blue-500 text-cs-primary">
                     <svg width="25" height="25" viewBox="0 0 25 25" fill="currentColor">
                         <path d="M16 6a2 2 0 0 1 2 2v13.66h-.01a.5.5 0 0 1-.12.29.5.5 0 0 1-.7.03l-5.67-4.13-5.66 4.13a.5.5 0 0 1-.7-.03.48.48 0 0 1-.13-.29H5V8c0-1.1.9-2 2-2h9zM6 8v12.64l5.16-3.67a.49.49 0 0 1 .68 0L17 20.64V8a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M21 5v13.66h-.01a.5.5 0 0 1-.12.29.5.5 0 0 1-.7.03l-.17-.12V5a1 1 0 0 0-1-1h-9a1 1 0 0 0-1 1H8c0-1.1.9-2 2-2h9a2 2 0 0 1 2 2z"></path>
                     </svg>
@@ -147,7 +147,7 @@
                 {{-- Notif np --}}
                 <div class="nav-notif-np">
                     <i class="far fa-bell"></i>
-                    <span class="nav-bullet-np flex h-3 w-3 rounded-full">
+                    <span class="nav-bullet-np flex h-3 w-3 rounded-full text-cs-primary">
                         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                         <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
                     </span>
@@ -184,7 +184,7 @@
             </a></li>
         </ul>
         <h4 class="mt-4 font-semibold text-sm uppercase">User</h4>
-        <ul class="flex flex-col">
+        <ul class="flex flex-col text-cs-primary">
             @guest
                 <li class="nav-menu-link text-cs-primary"><a href="{{ route('login') }}" class="nav-profile">
                     <i class="fas fa-sign-in-alt w-7"></i>
