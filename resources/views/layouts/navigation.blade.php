@@ -2,7 +2,7 @@
 {{-- Navbar Top --}}
 <div class="nav-top border-b z-10">
     <div class="container flex justify-between px-6 sm:px-0 md:px-8">
-        <div class="nav-brand flex items-center py-4">
+        <div class="nav-brand text-cs-primary flex items-center py-4">
             <a href="/" class="ml-0.5 lg:ml-0 flex items-center">
                 <i class="fab fa-blogger mr-4 md:mr-5"></i>
                 @if (request()->is('@*'))

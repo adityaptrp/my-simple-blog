@@ -19,7 +19,7 @@ class SettingSeeder extends Seeder
             'email_name' => 'Aditya Putra',
             'auth_caption' => 'Ciucaș Peak, Romania',
             'auth_owner_name' => 'David Marcu',
-            'auth_unsplash_username' => 'davidmarcu'
+            'auth_unsplash_username' => 'davidmarcu',
         ]);
     }
 }

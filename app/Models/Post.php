@@ -40,18 +40,38 @@ class Post extends Model
         if ($this->thumbnail == null) {
             return url('img/default_post.jpg');
         } else {
-            return "/storage/" . $this->thumbnail;
+            $isUrl = stristr($this->thumbnail, 'http://') ?: stristr($this->thumbnail, 'https://') ?: stristr($this->thumbnail, 'www.');
+            if($isUrl) {
+                return $this->thumbnail;
+            }
+            return asset('/storage/' . $this->thumbnail);
         }
     }
 
     public function getSubThumbnail1() 
     {
-        return "/storage/" . $this->sub_thumbnail1;
+        if ($this->sub_thumbnail1 == null) {
+            return url('img/default_post.jpg');
+        } else {
+            $isUrl = stristr($this->sub_thumbnail1, 'http://') ?: stristr($this->sub_thumbnail1, 'https://') ?: stristr($this->sub_thumbnail1, 'www.');
+            if($isUrl) {
+                return $this->sub_thumbnail1;
+            }
+            return asset('/storage/' . $this->sub_thumbnail1);
+        }
     }
 
     public function getSubThumbnail2() 
     {
-        return "/storage/" . $this->sub_thumbnail2;
+        if ($this->sub_thumbnail2 == null) {
+            return url('img/default_post.jpg');
+        } else {
+            $isUrl = stristr($this->sub_thumbnail2, 'http://') ?: stristr($this->sub_thumbnail2, 'https://') ?: stristr($this->sub_thumbnail2, 'www.');
+            if($isUrl) {
+                return $this->sub_thumbnail2;
+            }
+            return asset('/storage/' . $this->sub_thumbnail2);
+        }
     }
 
     public function youtubeLink() {

@@ -11,7 +11,7 @@ class Setting extends Model
 
     protected $fillable = ['auth_wallpaper', 'auth_caption', 'auth_owner_name', 'auth_unsplash_username'];
 
-    public function getAuthWallpaper() 
+    public function getAuthWallpaper()
     {
         return "/storage/" . $this->auth_wallpaper;
     }
