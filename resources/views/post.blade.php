@@ -1,7 +1,7 @@
 
 @extends('layouts.app')
 
-@section('title', $post->title)
+@section('title', 'Simple Blog | '.$post->title)
 
 @section('content')
     <div class="all-showpost-content container flex items-center justify-center px-6 sm:px-7 md:px-0 py-10">

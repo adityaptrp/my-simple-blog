@@ -1,7 +1,7 @@
 
 @extends('layouts.app')
 
-@section('title', 'Adityaptrp')
+@section('title', 'Simple Blog | Reading List')
 
 @section('content')
     <div class="all-content-rl container py-12 px-6 md:px-0 md:w-70vw lg:w-55vw">

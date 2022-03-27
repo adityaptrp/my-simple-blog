@@ -17,13 +17,13 @@
 {{-- Navbar Bottom --}}
 <div class="nav-bot border-b box-shadow-sm z-10">
     {{-- menu burger --}}
-    <div class="container px-6 sm:px-0 md:px-8 py-4 flex items-center justify-between lg:hidden">
+    <div class="container px-6 sm:px-0 md:px-8 py-4 flex items-center justify-between lg:hidden text-cs-primary">
         {{-- Dark Mode Button --}}
         <button type="button" class="btn-darkmode do-darkmode flex items-center focus:outline-none justify-center text-sm w-9 h-9 rounded-full">
             <i class="fas fa-moon"></i>
         </button>
         
-        <div class="flex items-center">
+        <div class="flex items-center text-cs-primary">
             @guest
                 {{-- Bookmark --}}
                 <a href="{{ route('readingList.saved') }}" class="mx-4 cursor-pointer hover:text-blue-500">
@@ -68,12 +68,12 @@
     </div>
     {{-- Menu all --}}
     <div class="nav-bot container justify-between items-center px-6 sm:px-0 md:px-8 hidden lg:flex">
-        <div class="flex items-center">
+        <div class="flex items-center text-cs-primary">
             @if (request()->is('@*'))
                 <h1 class="title-nav hidden lg:block text-xl mr-8">{{ $post->user->username }}</h1>
             @endif
             <ul class="navbar-links flex text-xs tracking-widest uppercase">
-                <li class="mr-6"><a class="inline-block py-6 hover:text-blue-400" href="{{ route('home') }}">Home</a></li>
+                <li class="mr-6"><a class="text-cs-primary inline-block py-6 hover:text-blue-400" href="{{ route('home') }}">Home</a></li>
                 <li class="nav-categories mr-6 relative">
                     <a class="nav-title-categories inline-block py-6 pr-2" href="#">Category</a>
                     <i class="fas fa-caret-down cursor-pointer -ml-1 icon-dd"></i>
@@ -83,12 +83,12 @@
                         @endforeach
                     </div>
                 </li>
-                <li class="mr-6"><a class="inline-block py-6 hover:text-blue-400" href="#">About</a></li>
-                <li class="mr-6"><a class="inline-block py-6 hover:text-blue-400" href="#">Contact</a></li>
+                <li class="mr-6"><a class="text-cs-primary inline-block py-6 hover:text-blue-400" href="#">About</a></li>
+                <li class="mr-6"><a class="text-cs-primary inline-block py-6 hover:text-blue-400" href="#">Contact</a></li>
             </ul>
         </div>
         @auth
-            <div class="flex items-center">
+            <div class="flex items-center text-cs-primary">
                 {{-- Dark Mode Button --}}
                 <button type="button" class="btn-darkmode do-darkmode flex items-center focus:outline-none justify-center mr-4 text-sm w-9 h-9 rounded-full">
                     <i class="fas fa-moon"></i>
@@ -160,25 +160,25 @@
 <div class="navigation-menu block items-center lg:hidden z-10">
     <div class="px-8 py-6 md:px-16">
         <h4 class="font-semibold text-sm uppercase">Menu</h4>
-        <ul class="flex flex-col">
-            <li class="nav-menu-link"><a href="{{ route('home') }}">
+        <ul class="text-cs-primary flex flex-col">
+            <li class="nav-menu-link"><a class="text-cs-primary" href="{{ route('home') }}">
                 <i class="fas fa-home w-7"></i>
                 <span>Home</span>
             </a></li>
-            <li class="nav-menu-link">
+            <li class="nav-menu-link text-cs-primary">
                 <ul class="dropdown-nav-s flex justify-between items-center">
-                    <div class="inline-block">
+                    <div class="inline-block text-cs-primary">
                         <i class="fas fa-clipboard-list w-7"></i>
                         <span>Category</span>
                     </div>
                     <i class="fas fa-angle-left"></i>
                 </ul>
             </li>
-            <li class="nav-menu-link"><a href="#">
+            <li class="nav-menu-link"><a class="text-cs-primary" href="#">
                 <i class="fas fa-user-circle w-7"></i>
                 <span>About</span>
             </a></li>
-            <li class="nav-menu-link"><a href="#">
+            <li class="nav-menu-link"><a class="text-cs-primary" href="#">
                 <i class="fas fa-address-book w-7"></i>
                 <span>Contact</span>
             </a></li>
@@ -186,20 +186,20 @@
         <h4 class="mt-4 font-semibold text-sm uppercase">User</h4>
         <ul class="flex flex-col">
             @guest
-                <li class="nav-menu-link"><a href="{{ route('login') }}" class="nav-profile">
+                <li class="nav-menu-link text-cs-primary"><a href="{{ route('login') }}" class="nav-profile">
                     <i class="fas fa-sign-in-alt w-7"></i>
                     <span>Log In</span>
                 </a></li>
             @else
-                <li class="nav-menu-link"><a href="{{ route('profile.show', Auth::user()->username) }}" class="nav-profile">
+                <li class="nav-menu-link text-cs-primary"><a href="{{ route('profile.show', Auth::user()->username) }}" class="nav-profile">
                     <i class="fas fa-user w-7"></i>
                     <span>Profile</span>
                 </a></li>
-                <li class="nav-menu-link"><a href="{{ route('dashboard') }}" class="nav-profile">
+                <li class="nav-menu-link text-cs-primary"><a href="{{ route('dashboard') }}" class="nav-profile">
                     <i class="fas fa-file-alt w-7"></i>
                     <span>Management</span>
                 </a></li>
-                <li class="nav-menu-link">
+                <li class="nav-menu-link text-cs-primary">
                     <a href="#" class="nav-logout hover:text-red-500" onclick="event.preventDefault(); document.getElementById('logout-form2').submit();">
                         <i class="fas fa-sign-out-alt w-7"></i>
                         <span>Logout</span>

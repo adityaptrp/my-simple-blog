@@ -2,7 +2,7 @@
 
 @extends('layouts.app')
 
-@section('title', 'Adityaptrp')
+@section('title', 'Simple Blog | @'.$user->username)
 
 @section('content')
     <div class="all-profile-content container sm:px-0 sm:w-152 md:w-160">

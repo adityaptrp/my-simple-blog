@@ -1,7 +1,7 @@
 
 @extends('layouts.app')
 
-@section('title', 'Search and find - Adityaptrp')
+@section('title', 'Simple Blog | Search and find')
 
 @section('content')
     <div class="search-c-all container mt-12 px-6 md:px-20 xl:px-40">

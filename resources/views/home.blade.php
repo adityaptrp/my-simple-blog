@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Adityaptrp')
+@section('title', 'Simple Blog')
 
 @section('content')
     {{-- <div class="home-header relative z-3 flex justify-center">

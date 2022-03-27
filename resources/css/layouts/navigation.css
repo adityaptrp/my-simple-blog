@@ -22,7 +22,7 @@
 .nav-bot {
     border-color: var(--nav-border-bot);
     background-color: var(--nav-bg);
-    color: var(--nav-default-text);
+    /* color: var(--nav-default-text); */
 }
 .nav-bot-rg .nav-row {
     border-color: var(--nav-garis-pembatas);
@@ -256,4 +256,3 @@
     100%  {transform: scale(1);}
 }
 
-/*  */
